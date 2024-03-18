@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewCustomErrorHandling</string>
+    <string name="disk_full">Disk is Full</string>
+    <string name="request_time_out">Request Times Out!</string>
+    <string name="too_many_requests">Has too many requests</string>
+    <string name="no_internet">Internet is unconnecting</string>
+    <string name="payload_too_large">Payload is too large</string>
+    <string name="server_error">Server Error</string>
+    <string name="serfialization">Serialization failed</string>
+    <string name="unknown">unknown</string>
+</resources>
