@@ -8,4 +8,7 @@
     <string name="server_error">Server Error</string>
     <string name="serfialization">Serialization failed</string>
     <string name="unknown">unknown</string>
+    <string name="password_too_short">Password Too Short!</string>
+    <string name="password_no_uppercase">Password Must Have Uppercase!</string>
+    <string name="password_no_digit">Password Must Have Digit!</string>
 </resources>

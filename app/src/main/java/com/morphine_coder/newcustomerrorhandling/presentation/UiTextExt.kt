@@ -4,6 +4,7 @@ import com.morphine_coder.newcustomerrorhandling.R
 import com.morphine_coder.newcustomerrorhandling.domain.DataError
 import com.morphine_coder.newcustomerrorhandling.domain.Result
 import com.morphine_coder.newcustomerrorhandling.domain.UiText
+import com.morphine_coder.newcustomerrorhandling.domain.UserDataValidator
 
 fun DataError.asUiText(): UiText {
     return when(this) {
@@ -20,4 +21,12 @@ fun DataError.asUiText(): UiText {
 
 fun Result.Error<*, DataError>.asErrorUiText(): UiText {
     return this.error.asUiText()
+}
+
+fun UserDataValidator.PasswordError.asUiText(): UiText {
+    return when(this) {
+        UserDataValidator.PasswordError.TOO_SHORT -> UiText.StringResource(R.string.password_too_short)
+        UserDataValidator.PasswordError.NO_UPPERCASE -> UiText.StringResource(R.string.password_no_uppercase)
+        UserDataValidator.PasswordError.NO_DIGIT -> UiText.StringResource(R.string.password_no_digit)
+    }
 }
